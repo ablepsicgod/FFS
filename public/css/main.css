@@ -1,0 +1,78 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 600px;
+  margin: 80px auto 80px;
+  padding-bottom: 100px;
+}
+
+.question-item {
+  width: 100%;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(19, 33, 53,.16);
+  border-radius: 12px;
+}
+
+.question-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.question {
+  width: 100%;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.answer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.control button:first-child {
+  margin-right: 48px;
+}
+
+.answer-field {
+  width: 100%;
+  position: fixed;
+  padding: 16px;
+  bottom: 0;
+  left: calc(50% + 8px);
+  transform: translate(-50%, 110%);
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 -4px 8px 0 rgba(19, 33, 53,.16);
+  border-radius: 12px 12px 0 0;
+  transition: ease-in 300ms;
+}
+
+.answer-field.show {
+  transform: translate(-50%, 0%);
+}
+
+.answer-field > p {
+  font-size: 24px;
+}
+
+.answer-field .sum {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
